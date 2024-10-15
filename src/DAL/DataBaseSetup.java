@@ -27,7 +27,7 @@ public class DataBaseSetup {
 
             String createStatusTable = "CREATE TABLE IF NOT EXISTS Status (" +
                     "id SERIAL PRIMARY KEY, " +
-                    "status VARCHAR(20) NOT NULL)";
+                    "status VARCHAR(40) NOT NULL)";
             try (PreparedStatement ps = conn.prepareStatement(createStatusTable)) {
                 ps.executeUpdate();
                 System.out.println("Table 'Status' créée avec succès.");

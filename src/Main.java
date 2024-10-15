@@ -9,7 +9,7 @@ public class Main {
         String url = "jdbc:postgresql://127.0.0.1:5432/";
         String user = "postgres";
         String password = "password"; //TODO Changer MDP
-        String dbName = "UE1396";
+        String dbName = "ue1396";
 
         // Créer la base de données
         DataBaseSetup.createDatabase(url, user, password, dbName);
